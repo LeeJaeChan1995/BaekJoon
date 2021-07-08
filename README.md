@@ -13,4 +13,4 @@
 ## 1차원 배열
 * 7.7.21 (2문제, 2번까지)
 * 8.7.21 (1문제)
-[BOJ_2577 풀이](https://velog.io/@ljc8721/BOJ "디버그로 알아보는 풀이"){:target='_blank'}
+[BOJ_2577 풀이](https://velog.io/@ljc8721/BOJ){:target='_blank'}
