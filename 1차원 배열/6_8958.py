@@ -1,14 +1,18 @@
-n = int(input())
+import sys
+input = sys.stdin.readline
 
-for i in range(n):
+N = int(input())
+
+for i in range(N):
     OX = input()
-    arr = list(OX)
     count = 0
-    count_sum = 0
-    for j in range(len(arr)):
-        if arr[j] == "O":
+    sum = 0
+
+    for j in range(len(OX)):
+        if OX[j] == "O":
             count += 1
-            count_sum = count_sum + count
-        else:
+            sum = sum + count
+        elif OX[j] == "X":
             count = 0
-    print(count_sum)
+
+    print(sum)

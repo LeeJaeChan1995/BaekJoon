@@ -1,9 +1,17 @@
-n = int(input())
-t_list = list(map(int, input().split()))
-max_s = max(t_list)
+import sys
+input = sys.stdin.readline
 
-mylist = []
-for score in t_list :
-    mylist.append(score/max_s * 100)
-t_avg = sum(mylist)/n
-print(t_avg)
+N = int(input())
+score = list(map(int, input().split()))
+
+max_score = max(score)
+average = 0
+
+for i in score:
+    if i == max_score:
+        pass
+    
+    average = average + (i / max_score) * 100
+
+print(average / N)
+    
