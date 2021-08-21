@@ -8,14 +8,14 @@ for i in range(X):
     if add >= X:
         break
 
-Start = count
-End = Start + 1
+Column = count
+Row = Column + 1
 
-if End % 2 == 1:
-    Start = End - (add - X)
-    End = (add - X) + 1
-elif End % 2 == 0:
-    End = End - (add - X)
-    Start = (add - X) + 1
+if Row % 2 == 1:
+    Column = Row - (add - X)
+    Row = (add - X) + 1
+elif Row % 2 == 0:
+    Row = Row - (add - X)
+    Column = (add - X) + 1
 
-print(f"{End}/{Start}")
+print(f"{Row}/{Column}")
