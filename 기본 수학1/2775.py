@@ -7,6 +7,6 @@ for i in range(T):
     for peopleNum in range(1, num + 1):
         people.append(peopleNum)
     for floorNum in range(floor):
-        for homeNum in range(1, num):
-            people[homeNum] += people[homeNum - 1]
+        for peopleNum in range(1, num):
+            people[peopleNum] += people[peopleNum - 1]
     print(people[-1])
